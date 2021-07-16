@@ -1,4 +1,4 @@
-# Git 에 대해 알아보자_01
+# Git과 GitHub_01
 
 ![img](data:image/png;base64,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)
 
@@ -63,14 +63,17 @@ __+추가사항__
 
    (나는 원격 저장소에서 파일을 삭제하고 상태를 변경하지 않았다 ) 따라서 push하기전에 먼저 pull을 해주어 둘의 상태를 같게 만들어 준뒤 실행하면 오류가 발생하지 않는다!
 
-   - \* error: failed to push some refs to 'http:// alkjflsdg'
-
+   - ```
+     ​``` error: failed to push some refs to 'http:// alkjflsdg'
+     
+     ​```
+     
      hint: Updates were rejected because the tip of your current branch is behind
-
+     
      hint: its remote counterpart. Integrate the remote changes (e.g.
-
+     
      hint: 'git pull ...') before pushing again.
-
+     
      hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 ---
