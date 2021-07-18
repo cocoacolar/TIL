@@ -47,9 +47,9 @@
    1. 깃헙 사이트 접속 및 로그인
    2. Respository에서 New 클릭
 
-   ![화면 캡처 2021-07-17 002649](C:\Users\super\OneDrive\바탕 화면\0716 수업 정리.assets\화면 캡처 2021-07-17 002649.png)
-
    
+
+   ![화면 캡처 2021-07-17 002649](Git_GitHub_02.assets/화면 캡처 2021-07-17 002649.png)
 
    
 
@@ -64,4 +64,22 @@
    ​			d. 생성된 repositoty의 default branch를 변경(Settings -> repositories)
 
    ​		
+
+---
+
+# Git Push & Pull
+
+원격저장소에 올린 프로젝트를 다른 곳(다른 Pc)에서 작업려면 어떻게 해야할까?? 방식은 아주 간단하다 .
+
+1. __Git clone__
+
+   - 원하는 환경에서 ***`$ git clone {원격저장소 URL}`***을 입력하면 된다.
+   - 여기서 원격저장소 Url은 Github의 reposiroty의 clone or download 메뉴에서 가져올 수 있다.
+   - 처음에만 clone을 입력하고 이후 부턴 ***`git pull`***로 간단하게 가져올 수 있다.
+
+   2.__git push__
+
+   - 이후 작업을 마치고 다시 원격저장소에 업로드을 원한다면 간단하게 ***git push***하면 된다.
+
+
 
