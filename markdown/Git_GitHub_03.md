@@ -12,7 +12,7 @@ git ignore는 git으로 관리하고 싶지 않은 파일들의 리스트를 작
 
   
 
-### git ignore 방법
+### git ignore 방법  
 
 1. 먼저 bash 창을 열어 ***`touch . gitignore`***를 하여 .gitignore를 만들어 준다. 이때 주의할 점은 반드시 __.git이 있는 최상위 repository__에서 해야한다는 것이다.
 2. https://gitignore.io/ 에 접속하여 내가 작업하는 환경을 입력하면 자동으로 리스트를 만들어 준다. 이를 복사해 사용하면 된다.
@@ -81,7 +81,25 @@ branch의 병합과정에서 발생할 수 있는 case는 3가지 이다.
 
 ---
 
-## git conflict
+## git conflict 해결하기
 
 ---
+
+![image-20210719221508439](Git_GitHub_03.assets/image-20210719221508439.png)
+
+conflict가 발생하면 다음과 같이 Conflict가 발생했다는 결과를 받을 수 있다. 따라서 이를 해결하는 과정은 다음과 같다.
+
+1. conflict가 발생한 파일을 vscode로 열어 준다. 
+2. 현재변경사항, 수신변경사항, 두 변경사항 등 수락할 사항을 선택한다.
+3. ![image-20210719221822610](Git_GitHub_03.assets/image-20210719221822610.png)
+
+4. ![image-20210719222405948](Git_GitHub_03.assets/image-20210719222405948.png)
+
+5. ![image-20210719222424694](Git_GitHub_03.assets/image-20210719222424694.png)
+
+6. 위에서 처럼 vscode에서 수정을 한 뒤에  다시 add와 commit을 해주면 conflict가 해결되고 merge가 성공적으로 된다.
+
+7. ![image-20210719222610443](Git_GitHub_03.assets/image-20210719222610443.png)
+
+8. Conflict를 해결한뒤 확인하면 위와 같은 결과가 나온다.
 
