@@ -76,5 +76,11 @@ __+추가사항__
      
      hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
----
+
+
+4. .git 명령어는 항상 .git 폴더가 있는 곳에서 실행
+
+5. git 저장소로 활용되는 폴더에 다른 git 저장소를 옮기지 말 것
+
+   
 
