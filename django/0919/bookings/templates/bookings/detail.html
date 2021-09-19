@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Detail</h1>
+<hr>
+<h2>{{ booking.pk }}번 예약현황 {{ booking.title }}</h2>
+<p>예약승인 시간: {{ booking.created_at }}</p>
+<p>예약 인원: {{ booking.members }}명</p>
+<p>추가 사항: {{ booking.content }}</p>
+
+<form action="{% url 'bookings:update' booking.pk%}">
+    <button>내용수정</button>
+</form>
+<form action="{% url 'bookings:index' %}">
+    <button>뒤로가기</button>
+</form>
+<form action="{% url 'bookings:delete' booking.pk%}" method="POST">
+    {% csrf_token %}
+    <button>삭제</button>
+</form>
+
+{% endblock content %}
+
+
+

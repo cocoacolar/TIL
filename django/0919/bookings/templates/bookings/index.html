@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> 예약 현황 페이지 </h1>
+<hr>
+{% for booking in bookings%}
+    <h2>{{ booking.title }} </h1>
+    <p>{{ booking.created_at }}</p>
+    <p>{{ booking.members }}</p>
+    <p>{{ booking.content }}</p>
+    <a href="{% url 'bookings:detail' booking.pk%}">[세부내용]</a>
+    <hr>
+{% endfor %}
+
+
+{% endblock content %}
